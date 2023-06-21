@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar{
+ background-color: blue;
+ padding: 14px;
+ animation: scale 10s ease-in-out infinite;
+}
+
+@keyframes scale{
+
+    0% {background-image:url('image/light.jpg') ;}
+    25% {background-image: url('image/blue.jpg'); left: 200px;top: 200px;}
+    50% {background-image: url('image/colorful.png');}
+     75% {background-image: url('image/sky.jpg'); right: 300px;left: 100px;}
+     100% {background-image: url('image/water.jpg');}
+ }
+
+#navbar ul{
+    display: inline;
+}
+
+#navbar a{
+     color: white;
+
+}
+
+#navbar a:hover{
+color: grey;
+background-color: white;
+}
+
+#navbar li{
+    display: inline;
+    float: left;
+     /* background-color: blue; */
+     margin-left: 50px;
+     margin-top: 15px;
+
+}
+
+.search input{
+    margin-left: 30px;
+    width: 50%;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+}
+
+.search button {
+    background-color:  transparent;
+    color: white;
+    font-size: 25px;
+     padding: 6px;
+     border: 0;
+}
+
+
+
+/* my animation navbar */
+
+.scale input {
+    font-size: 20px;
+    width: 125px;
+    border: 3px solid green;
+    /* box-sizing: border-box; */
+    border-radius: 6px;
+    background-color: white;
+    /* background-image: url('image/light.jpg'); */
+    background-position: 1px;
+    background-repeat: no-repeat;
+    /* padding: 12px 20px 12px 40px; */
+    /* -webkit-transition: width 0.4s ease-in-out; */
+    /* transition: width 0.3s ease-in-out; */
+}
+
+input:hover{
+    /* width: 90%; */
+}
+
+.div div{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition: width 2s, height2s, transform 2s;
+}
+
+.div div:hover{
+    width: 300px;
+    height: 300px;
+    transform: translate(4rem);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    left: 50%;
+    bottom: 100%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+  .tool li{
+display: inline;
+margin-left: 200px;
+font-size: 30px;
+position: relative;
+display: inline-block;
+  }
+
+  .tool li .tooltip{
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    width: 80px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    left: 60%;
+    bottom: 120%;
+    margin-left: -40px;
+    z-index: 1;
+  }
+
+  .tool li a:hover .tooltip {
+    visibility: visible;
+  }
